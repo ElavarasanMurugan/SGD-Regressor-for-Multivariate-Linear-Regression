@@ -14,7 +14,7 @@ To write a program to predict the price of the house and number of occupants in 
 3. Initialize SGDRegressor with MultiOutputRegressor and fit on training data.
 4. Predict on test data, inverse-transform results, and compute mean squared error.
 
-## Program and Output:
+## Program :
 ```
 /*
 Program to implement the multivariate linear regression model for predicting the price of the house and number of occupants in the house with SGD regressor.
