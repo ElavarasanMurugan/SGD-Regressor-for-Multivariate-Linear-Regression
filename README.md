@@ -62,7 +62,8 @@ multi_output_sgd.fit(X_train, Y_train)
 
 Y_pred=multi_output_sgd.predict(X_test) 
 
-Y_test= scaler_Y.inverse_transform(Y_pred)  
+Y_test= scaler_Y.inverse_transform(Y_test)
+Y_pred = scaler_Y.inverse_transform(Y_pred)
  
 mse= mean_squared_error (Y_test, Y_pred) 
 print("Mean Squared Error:", mse) 
@@ -79,7 +80,7 @@ print("\nPredictions: \n",Y_pred[:5])
 
 **Mean Squared Error and Predictions**
 
-![Screenshot 2025-04-21 083435](https://github.com/user-attachments/assets/2d54f884-6292-4984-8bfc-18abc29d6086)
+![image](https://github.com/user-attachments/assets/8325c358-b367-41e4-b63f-4a797a1fd9b6)
 
 
 ## Result:
